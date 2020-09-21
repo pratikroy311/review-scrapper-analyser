@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Search Page</title>
+{% endblock %}
+
+{% block body %}
+<div>
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Name</th>
+        <th scope="col">Rating</th>
+        <th scope="col">Comment Heading</th>
+        <th scope="col">Comments</th>
+        <th scope="col">Review Sentiment</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for review in reviews %}
+      <tr>
+        <td>{{review['Product']}}</td>
+        <td>{{review['Name']}}</td>
+        <td>{{review['Rating']}}</td>
+        <td>{{review['CommentHead']}}</td>
+        <td>{{review['Comment']}} </td>
+        <td>{{review['sentiment']}} </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}
