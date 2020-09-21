@@ -2,8 +2,9 @@
 
 ## Currently in development stage
 
-### Currently Sentiment is predicted using Decision Tree Classifier
+### Currently Sentiment is predicted using Decision Tree Classifier and is built on amazon fine food reviews data
 #### Will be updating with more models
+## The user searches for product and the reviews are extracted from flipkart and their sentiment is predicted
 
 ## Dependencies:
 * python3.7
