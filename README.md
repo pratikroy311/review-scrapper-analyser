@@ -18,4 +18,4 @@
 * pip install scikit-learn
 * pip install flask
 * move to project directory and open terminal
-* run command ```python manage.py runserver```
+* run command ```python flask_app.py```
